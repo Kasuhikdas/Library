@@ -1,0 +1,6 @@
+resource
+echo $datetime2;
+$d1=date_create($datetime1);
+$d2=date_create($datetime2);
+$interval = date_diff($d1, $d2);
+echo $interval->format('%a');
